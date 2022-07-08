@@ -1,0 +1,126 @@
+/* Common */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family:'Manrope', sans-serif;
+    background-color: hsl(214, 18%, 15%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    margin: 7.5rem auto;
+    width: 510px;
+    height: 300px;
+    background-color: hsl(217, 25%, 23%);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Advice */
+.advice {
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+
+.advice h1 {
+    margin-top: 3.5rem;
+    color: hsl(150, 100%, 66%);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.advice p {
+    margin: 2rem;
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+}
+
+
+/* Button */
+.dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    border: none;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    width: 3.7rem;
+    border-radius: 100%;
+    transition: .3s all;
+}
+
+.dice:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 22px 4px hsl(150, 100%, 66%);
+}
+
+
+/* Start Media Querys */
+
+@media (max-width: 375px) {
+    body {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       width: fit-content; 
+    }
+
+    .advice h1{
+        margin-top: 3rem;
+        font-size: 13px;
+        letter-spacing: 4px;
+        text-align: center;
+        
+    }
+
+    .advice p {
+        margin: 1rem;
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 8rem;
+        margin-left: 2.5rem;
+        width: 310px;
+        height: 250px;
+        padding: 2rem;
+    }
+
+    .divider {
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .dice {
+        margin-top: 1.3rem;
+    }
+
+}
